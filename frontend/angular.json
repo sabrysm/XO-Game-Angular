@@ -13,10 +13,13 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/frontend",
+            "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
+            "baseHref": "https://sabrysm.github.io/XO-Game-Angular/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -90,6 +93,9 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
