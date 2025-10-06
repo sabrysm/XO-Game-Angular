@@ -1,0 +1,25 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  width: 300px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.board-row {
+  display: contents;
+}
+.status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+h3, h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
